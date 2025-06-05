@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Itamar leon leon </title>
+	<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<style>
+	html{
+			--colororchiddust:#BB8C94;/*orchiddust*/
+			--coloroatmilk:#F3E0D1 ; /*oatmilk*/
+			--colorblanco:#FFFFFF ; /*blanco */
+			--colornegro:#0000000 ; /*negro */
+			--colorazul:#124F88; /*azul */
+			--colorwine:#741C28; /*wine */
+			--colorgris:#E5E5E5; /*gris */
+			--coloramarillo:#F7C331;
+	}
+	body{
+		font-family: 'Oswald', Sans-serif;
+		background: var(--coloroatmilk);
+		color:var(--colornegro);
+	}
+	a{
+		text-decoration: none;
+		color: var(--colornegro);
+		/*border:2px var(--colorazul) solid;*/
+	}
+	li{
+		/*border:2px var(--coloramarillo) solid;*/
+	}
+	div{
+		/*border:2px var(--coloramarillo) solid;*/
+	}
+	ul{
+		/*border:2px var(--colorgris) solid;*/
+	}
+	.contenedormenu{
+		/*border:2px var(--colornegro) solid;*/
+		display: flex;
+		justify-content:space-between;
+		padding: 10px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.encabezado{
+		/*border:2px var(--coloramarillo) solid;*/
+		box-shadow: 0 4px 5px var(--colorwine);
+		position: sticky;
+		background-color: var(--colorgris)
+		left: 0;
+		top: 0;
+		background:var(--colorwine);
+		z-index: 100;
+	}
+	.logo{
+		display: flex;
+		align-items: center;
+		font-size: 18px;
+		font-weight: 200;
+		color: var(--colorblanco)
+	}
+	.logo img{
+		border-radius: 30%;
+	}
+	.menu{
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.menu li{
+		padding: 0 15px;
+	}
+	.menu a{
+		color: var(--colortexto)
+		font-size: 18-px;
+		font-weight: 400;
+		text-transform: uppercase;
+		line-height: 50px;
+	}
+
+/********************PERFIL********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+	.perfilseccion{
+		text-align: center;
+	}
+	.perfilcontenedor{
+		margin-top: 1px;
+	}
+	.perfiltitulo{
+		margin: 0;
+		color: var(--colororchiddust);
+		font-size: 35px;
+		font-weight: bold;
+		font-family: "Noto Sans", sans-serif;
+	}
+	.perfildetalles{
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 2;
+		max-width: 300px;
+		margin: 20px auto;
+	}
+	.perfilbotondescargar{
+		background-color: var(--colororchiddust);
+		color: var(--colorblanco);
+		border:none;
+		font-size: 20px;
+		padding: 0.5em 1em;
+		border-radius: 7px;
+		cursor: pointer;
+	}
+	.perfilbotondescargar:hover{
+		filter: brightness(150%);
+	}
+	.perfilfoto{
+		position: relative;
+		display: inline;
+	}
+	.fotoperfilpng{
+		width: 80%;
+		max-width: 300px;
+	}
+	.perfillineaamarilla{
+		background-color: var(--colorwine);
+		height: 15px;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+	}
+
+/********************CAMBIO DE PANTALLA PARA PERFIL********************/
+
+@media (min-width: 700px){
+
+	.perfilseccion{
+		display: flex;
+		text-align: left;
+		justify-content: space-between;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.perfilcontenedor{
+		margin-bottom: 1px;
+	}
+	.perfiltitulo{
+		font-size: 60px;
+	}
+	.perfildetalles{
+		font-size: 18px;
+		margin: 50px 0;
+	}
+	.perfilbotondescargar{
+		font-size: 20px;
+	}
+	.fotoperfilpng{
+		width: 100%;
+		max-width: 600px;
+		transform: scaleX(-1);
+	}
+  }
+
+  /********************************************HABILIDADES*************************************/
+
+  	.habilidadesseccion{
+  		max-width: 900px;
+  		margin: 0 auto;
+ 	 }
+ 	 .habilidadestitulo{
+ 	 	font-size: 30px;
+ 	 	font-weight: bold;
+ 	 	text-transform: uppercase;
+ 	 	text-align: center;
+ 	 	color: var(--colornegro);
+ 	 }
+ 	 .habilidad{
+ 	 	font-size: 20px;
+ 	 	font-weight: 400;
+ 	 	box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+ 	 	border-radius: 42px;
+ 	 	padding: 0.5em 0.7em;
+ 	 	margin: 10px;
+ 	 }
+ 	 .habilidadeslista{
+ 	 	list-style: none;
+ 	 	padding: 0;
+ 	 	display: flex;
+ 	 	flex-wrap: wrap;
+ 	 	justify-content:center;
+ 	 	color: var(--colornegro)
+ 	 }
+
+ /******************************************************MEDIA HABILIDADES**************************************************/
+
+ 	@media (min-width: 700px){
+ 		.habilidadestitulo{
+ 			font-size: 50px;
+ 		}
+ 		.habilidad{
+ 			font-size: 	30px;
+ 			margin: 	20px;
+ 		}
+ 	}
+
+
+</style>
+
+</head>
+<body>
+
+		<header class="encabezado">
+				<nav class="contenedormenu">
+
+
+						<a href="#" class="logo">
+							<img src="LEONLE_ITAMAR_601_FOTOLOGO.JPG" height="50" >
+							<div>
+									Itamar Leon <br> 
+									Leon
+
+							</div>
+						</a>
+
+						<ul class="menu">
+									<li><a href="#">Perfil</a></li>
+									<li><a href="#">Experiencia</a></li>
+									<li><a href="#">Habilidad</a></li>
+									<li><a href="#">Contacto</a></li>
+						</ul>
+				</nav>
+		</header>
+
+		<section class="perfilseccion">
+
+			<div class="perfilcontenedor">
+
+				<h1 class="perfiltitulo">Hola <br>soy Itamar</h1>
+				<p class="perfildetalles">Soy un estudiante activo, social y resposable, actualmente estudio en el EMSaD 64 Santa Maria Cuquila</p>
+				<button class="perfilbotondescargar">
+					Dercargar CV
+				</button>
+
+			</div>
+				
+			<div class="perfilfoto">
+					<img class="fotoperfilpng" src="LEONLE_ITAMAR_601_FOTOPERFIL.png">
+					<div class="perfillineaamarilla"></div>
+			</div>
+			
+		</section>
+
+		<section class="habilidadesseccion">
+			<h2 class="habilidadestitulo"> HABILIDADES</h2>
+			<ul class="habilidadeslista">
+				<li class="habilidad">Bailar</li>
+				<li class="habilidad">Observador</li>
+				<li class="habilidad">Futbol</li>
+				<li class="habilidad">Conducir</li>
+			</ul>
+		</section>
+</body>
+</html>
